@@ -2,9 +2,6 @@
 
 An application for organizing and managing a bookstore built using React & Redux.
 
-## Screenshot
-
-
 ## Built With
 
 - Node.js
@@ -18,7 +15,7 @@ An application for organizing and managing a bookstore built using React & Redux
 
 ## Live Link (Heroku)
 
-
+[Live Link](https://magic-books-bookstore.herokuapp.com/)
 
 ## Getting Started
 

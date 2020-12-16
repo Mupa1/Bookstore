@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Book from '../components/Book';
 
-const BookList = ({ books }) => (
+const BooksList = ({ books }) => (
   <table>
     <thead>
       <tr>
@@ -21,10 +21,10 @@ const BookList = ({ books }) => (
   </table>
 );
 
-BookList.propTypes = {
+BooksList.propTypes = {
   books: PropTypes.isRequired,
 };
 
 const mapStateToProps = state => ({ books: state.books });
 
-export default connect(mapStateToProps)(BookList);
+export default connect(mapStateToProps)(BooksList);

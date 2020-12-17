@@ -21,6 +21,7 @@ const BooksFrom = () => {
           <option key={category}>{category}</option>
         ))}
       </select>
+      <button type="submit">Submit</button>
     </form>
   );
 };

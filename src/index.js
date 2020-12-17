@@ -21,7 +21,7 @@ const initialState = {
     },
     {
       id: Math.floor(Math.random() * 10),
-      title: 'A Primised Land',
+      title: 'A Promised Land',
       category: 'History',
     },
   ],

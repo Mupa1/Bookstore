@@ -5,20 +5,18 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
-  <table>
-    <thead>
-      <tr>
-        <th>Books ID</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
-    </thead>
+  <>
+    <>
+      <th>Books ID</th>
+      <th>Title</th>
+      <th>Category</th>
+    </>
     <tbody>
       {books.map(book => (
         <Book key={book.id} book={book} />
       ))}
     </tbody>
-  </table>
+  </>
 );
 
 BooksList.propTypes = {

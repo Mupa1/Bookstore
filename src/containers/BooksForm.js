@@ -14,7 +14,7 @@ const BooksFrom = () => {
   return (
     <form>
       Title:
-      <input type="text" placeholder="enter the book's title" />
+      <input type="text" />
       Categories:
       <select>
         {categories.map(category => (

@@ -10,17 +10,17 @@ import booksReducer from './reducers/books';
 const initialState = {
   books: [
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: 'Horsemen\'s War',
       category: 'Action',
     },
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: 'Becoming',
       category: 'Biography',
     },
     {
-      id: Math.floor(Math.random() * 10),
+      id: Math.floor(Math.random() * 100),
       title: 'A Promised Land',
       category: 'History',
     },

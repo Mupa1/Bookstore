@@ -23,16 +23,22 @@ class BooksFrom extends React.Component {
     const { CREATE_BOOK } = this.props;
     const { title, category } = this.state;
 
-    CREATE_BOOK({
-      id: Math.floor(Math.random() * 100),
-      title,
-      category,
-    });
-
-    this.setState({
-      title: '',
-      category: '',
-    });
+    if (title === '' || category === '') {
+      const msg = 'Please provide complete details';
+      document.getElementById('error').innerHTML = msg;
+    } else {
+      CREATE_BOOK({
+        id: Math.floor(Math.random() * 100),
+        title,
+        category,
+      });
+      document.getElementById('form').reset();
+      document.getElementById('error').innerHTML = '';
+      this.setState({
+        title: '',
+        category: '',
+      });
+    }
   }
 
   render() {
@@ -47,11 +53,13 @@ class BooksFrom extends React.Component {
     ];
 
     return (
-      <form>
+      <form id="form">
+        <div id="error" />
         Title:
         <input type="text" name="title" onChange={this.handleChange} />
         Categories:
-        <select name="category" onChange={this.handleChange}>
+        <select name="category" onChange={this.handleChange} defaultValue="default">
+          <option disabled value="default">-- select category --</option>
           {categories.map(category => (
             <option key={category}>{category}</option>
           ))}

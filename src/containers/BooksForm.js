@@ -10,6 +10,7 @@ class BooksFrom extends React.Component {
     this.state = {
       title: '',
       category: '',
+      errorMessage: '',
     };
   }
 
@@ -24,19 +25,20 @@ class BooksFrom extends React.Component {
     const { title, category } = this.state;
 
     if (title === '' || category === '') {
-      const msg = 'Please provide complete details';
-      document.getElementById('error').innerHTML = msg;
+      this.setState({
+        errorMessage: 'Please provide complete details',
+      });
     } else {
       CREATE_BOOK({
         id: Math.floor(Math.random() * 100),
         title,
         category,
       });
-      document.getElementById('form').reset();
-      document.getElementById('error').innerHTML = '';
+      e.target.reset();
       this.setState({
         title: '',
         category: '',
+        errorMessage: '',
       });
     }
   }
@@ -51,10 +53,11 @@ class BooksFrom extends React.Component {
       'Learning',
       'Sci-Fi',
     ];
+    const { errorMessage } = this.state;
 
     return (
-      <form id="form">
-        <div id="error" />
+      <form onSubmit={this.handleSubmit}>
+        <h4>{errorMessage}</h4>
         Title:
         <input type="text" name="title" onChange={this.handleChange} />
         Categories:
@@ -64,7 +67,7 @@ class BooksFrom extends React.Component {
             <option key={category}>{category}</option>
           ))}
         </select>
-        <button type="submit" onClick={this.handleSubmit}>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { CREATE_BOOK } from '../actions/index';
+import { createBook } from '../actions/index';
 
 class BooksFrom extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class BooksFrom extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const { CREATE_BOOK } = this.props;
+    const { createBook } = this.props;
     const { title, category } = this.state;
 
     if (title === '' || category === '') {
@@ -29,7 +29,7 @@ class BooksFrom extends React.Component {
         errorMessage: 'Please provide complete details',
       });
     } else {
-      CREATE_BOOK({
+      createBook({
         id: Math.floor(Math.random() * 100),
         title,
         category,
@@ -74,13 +74,13 @@ class BooksFrom extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  CREATE_BOOK: book => {
-    dispatch(CREATE_BOOK(book));
+  createBook: book => {
+    dispatch(createBook(book));
   },
 });
 
 BooksFrom.propTypes = {
-  CREATE_BOOK: PropTypes.func.isRequired,
+  createBook: PropTypes.func.isRequired,
 };
 
 export default connect(null, mapDispatchToProps)(BooksFrom);

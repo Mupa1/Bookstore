@@ -30,7 +30,7 @@ const BooksList = ({
       <header className="panel-bg d-flex bg-white align-items-center justify-content-between montserrat">
         <div className="d-flex align-items-center panel-left justify-content-between">
           <h1 className="logo azure font-weight-bold m-0">Bookstore CMS</h1>
-          <div className="font-weight-bold">BOOKS</div>
+          <div className="books font-weight-bold">BOOKS</div>
           <CategoryFilter handleFilterChange={handleFilterChange} />
         </div>
         <div className="image-container grey-bd">

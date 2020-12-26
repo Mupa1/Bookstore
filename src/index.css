@@ -12,10 +12,6 @@ body {
   color: #121212;
 }
 
-select {
-  border: solid 1px #e8e8e8;
-}
-
 button {
   background: none;
   border: none;
@@ -44,6 +40,11 @@ button {
   height: 95px;
   padding: 0 100px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.books,
+.filter-cat {
+  letter-spacing: 1.9px;
 }
 
 .panel-left {
@@ -147,6 +148,7 @@ table {
 .chapter-num {
   padding: 7px 0 11px 0;
   font-size: 16px;
+  letter-spacing: -0.4px;
 }
 
 .update {
@@ -161,4 +163,60 @@ table {
 .update,
 .chapter-title {
   font-size: 13px;
+}
+
+.hr-container {
+  width: 100%;
+  padding: 0 100px;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  margin: 40px auto 29px auto;
+  border: solid 1px #e8e8e8;
+}
+
+.add-bk-title {
+  margin: 0 0 19px 100px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+form {
+  padding: 0 100px 265px 100px;
+}
+
+input::placeholder,
+select {
+  color: #c4c4c4;
+}
+
+input {
+  border-radius: 4px;
+}
+
+.category-box {
+  padding: 0 34px;
+}
+
+input,
+.categories {
+  height: 45px;
+  letter-spacing: -0.15px;
+}
+
+.add-bk-btn,
+.update {
+  letter-spacing: 0.5px;
+}
+
+.add-bk-btn {
+  height: 45px;
+  background-color: #0290ff;
+  color: #fff;
+  border-radius: 3px;
 }

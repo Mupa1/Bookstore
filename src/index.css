@@ -8,10 +8,18 @@ body {
   margin: 0 auto;
   font-size: 14px;
   font-weight: 300;
+  box-sizing: border-box;
+  color: #121212;
 }
 
 select {
   border: solid 1px #e8e8e8;
+}
+
+button {
+  background: none;
+  border: none;
+  font-weight: 300;
 }
 
 .azure {
@@ -27,9 +35,13 @@ select {
   border: solid 1px #e8e8e8;
 }
 
+.grey-right-bd {
+  border-right: solid 1px #e8e8e8;
+}
+
 .panel-bg {
   width: 100%;
-  height: 94px;
+  height: 95px;
   padding: 0 100px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 }
@@ -53,4 +65,100 @@ select {
 .image-container img {
   width: 17px;
   height: 17px;
+}
+
+table {
+  width: 100%;
+  margin: 37px auto;
+}
+
+.book-container {
+  margin: 15px 100px 0;
+  min-height: 170px;
+  max-height: 100%;
+  border-radius: 4px;
+  padding: 32px 0 26px 27px;
+}
+
+.book-title {
+  font-size: 22px;
+  padding-top: 3px;
+  margin-bottom: -4px;
+  letter-spacing: -0.2px;
+}
+
+.circle {
+  background-color: #fff;
+  border: 5px solid;
+  border-color: #307bbe #379cf6 #379cf6 #e8e8e8;
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-right: 22px;
+}
+
+.percentage {
+  font-size: 32px;
+  margin-bottom: -7px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.actions,
+.author,
+.remove {
+  color: #4386bf;
+}
+
+.actions {
+  padding-top: 10px;
+}
+
+.book-info-1 {
+  max-width: 559px;
+}
+
+.percent-info {
+  padding-right: 60px;
+  width: 100%;
+}
+
+.remove {
+  padding: 0 15px;
+}
+
+.comments {
+  padding-right: 15px;
+}
+
+.edit {
+  padding-left: 15px;
+}
+
+.book-info-3 {
+  padding: 0 0 0 59px;
+}
+
+.chapter-num {
+  padding: 7px 0 11px 0;
+  font-size: 16px;
+}
+
+.update {
+  padding: 7px 20px;
+  background-color: #0290ff;
+  border: 1px solid #0290ff;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.update,
+.chapter-title {
+  font-size: 13px;
 }

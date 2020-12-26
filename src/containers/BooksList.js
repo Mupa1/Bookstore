@@ -29,7 +29,7 @@ const BooksList = ({
     <>
       <header className="panel-bg d-flex bg-white align-items-center justify-content-between montserrat">
         <div className="d-flex align-items-center panel-left justify-content-between">
-          <h1 className="logo azure font-weight-bold">Bookstore CMS</h1>
+          <h1 className="logo azure font-weight-bold m-0">Bookstore CMS</h1>
           <div className="font-weight-bold">BOOKS</div>
           <CategoryFilter handleFilterChange={handleFilterChange} />
         </div>
@@ -38,13 +38,6 @@ const BooksList = ({
         </div>
       </header>
       <table>
-        <thead>
-          <tr>
-            <th>Books ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
         <tbody>
           {filteredBooks.map(book => (
             <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />

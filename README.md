@@ -2,6 +2,9 @@
 
 An application for organizing and managing a bookstore built using React & Redux.
 
+## Screenshot
+![screenshot](https://user-images.githubusercontent.com/44979953/103160602-a19e9f00-47d7-11eb-9d99-a3af7803e058.png)
+
 ## Built With
 
 - Node.js

@@ -207,11 +207,17 @@ input,
 .categories {
   height: 45px;
   letter-spacing: -0.15px;
+  font-size: 16px;
+}
+
+.categories {
+  padding-left: 16px;
 }
 
 .add-bk-btn,
 .update {
   letter-spacing: 0.5px;
+  font-size: 13px;
 }
 
 .add-bk-btn {

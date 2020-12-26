@@ -62,7 +62,7 @@ class BooksFrom extends React.Component {
         </div>
         <h2 className="add-bk-title">ADD NEW BOOK</h2>
         <form className="m-0 row" onSubmit={this.handleSubmit}>
-          <h4>{errorMessage}</h4>
+          <h4 className="col-12 text-center">{errorMessage}</h4>
           <input className="col-md-7 grey-bd w-100" type="text" name="title" placeholder="Book title" onChange={this.handleChange} />
           <div className="col-md-3 category-box">
             <select className="grey-bd categories w-100" name="category" onChange={this.handleChange} defaultValue="default">
@@ -72,7 +72,7 @@ class BooksFrom extends React.Component {
               ))}
             </select>
           </div>
-          <button className="col-md-2 add-bk-btn w-100 font-weight-bold" type="submit">Add Book</button>
+          <button className="col-md-2 add-bk-btn w-100 font-weight-bold" type="submit">ADD BOOK</button>
         </form>
       </>
     );

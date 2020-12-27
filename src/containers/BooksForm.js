@@ -56,19 +56,25 @@ class BooksFrom extends React.Component {
     const { errorMessage } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h4>{errorMessage}</h4>
-        Title:
-        <input type="text" name="title" onChange={this.handleChange} />
-        Categories:
-        <select name="category" onChange={this.handleChange} defaultValue="default">
-          <option disabled value="default">-- select category --</option>
-          {categories.map(category => (
-            <option key={category}>{category}</option>
-          ))}
-        </select>
-        <button type="submit">Submit</button>
-      </form>
+      <>
+        <div className="hr-container">
+          <hr />
+        </div>
+        <h2 className="add-bk-title">ADD NEW BOOK</h2>
+        <form className="m-0 row" onSubmit={this.handleSubmit}>
+          <h4 className="col-12 text-center">{errorMessage}</h4>
+          <input className="col-md-7 grey-bd w-100" type="text" name="title" placeholder="Book title" onChange={this.handleChange} />
+          <div className="col-md-3 category-box">
+            <select className="grey-bd categories w-100" name="category" onChange={this.handleChange} defaultValue="default">
+              <option disabled value="default">Category</option>
+              {categories.map(category => (
+                <option key={category}>{category}</option>
+              ))}
+            </select>
+          </div>
+          <button className="col-md-2 add-bk-btn w-100 font-weight-bold" type="submit">ADD BOOK</button>
+        </form>
+      </>
     );
   }
 }

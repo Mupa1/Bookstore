@@ -15,7 +15,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
 
   return (
     <div>
-      <select name="category" onChange={handleFilterChange}>
+      <select className="grey-bd filter-cat" name="category" onChange={handleFilterChange}>
         {categories.map(category => (
           <option key={category}>{category}</option>
         ))}

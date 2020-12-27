@@ -12,6 +12,10 @@ body {
   color: #121212;
 }
 
+li {
+  list-style: none;
+}
+
 button {
   background: none;
   border: none;
@@ -49,7 +53,6 @@ button {
 
 .panel-left {
   width: 498px;
-  list-style: none;
 }
 
 .logo {

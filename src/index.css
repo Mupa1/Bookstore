@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
+
+body {
+  font-family: RobotoSlab, sans-serif;
+  background-color: #f5f6fa;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  box-sizing: border-box;
+  color: #121212;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-weight: 300;
+}
+
+.azure {
+  color: #0290ff;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.grey-bd {
+  border: solid 1px #e8e8e8;
+}
+
+.grey-right-bd {
+  border-right: solid 1px #e8e8e8;
+}
+
+.panel-bg {
+  width: 100%;
+  height: 95px;
+  padding: 0 100px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+
+.books,
+.filter-cat {
+  letter-spacing: 1.9px;
+}
+
+.panel-left {
+  width: 498px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.image-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 13px;
+}
+
+.image-container img {
+  width: 17px;
+  height: 17px;
+}
+
+table {
+  width: 100%;
+  margin: 37px auto;
+}
+
+.book-container {
+  margin: 15px 100px 0;
+  min-height: 170px;
+  max-height: 100%;
+  border-radius: 4px;
+  padding: 32px 0 26px 27px;
+}
+
+.book-title {
+  font-size: 22px;
+  padding-top: 3px;
+  margin-bottom: -4px;
+  letter-spacing: -0.2px;
+}
+
+.circle {
+  background-color: #fff;
+  border: 5px solid;
+  border-color: #307bbe #379cf6 #379cf6 #e8e8e8;
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-right: 22px;
+}
+
+.percentage {
+  font-size: 32px;
+  margin-bottom: -7px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.actions,
+.author,
+.remove {
+  color: #4386bf;
+}
+
+.actions {
+  padding-top: 10px;
+}
+
+.book-info-1 {
+  max-width: 559px;
+}
+
+.percent-info {
+  padding-right: 60px;
+  width: 100%;
+}
+
+.remove {
+  padding: 0 15px;
+}
+
+.comments {
+  padding-right: 15px;
+}
+
+.edit {
+  padding-left: 15px;
+}
+
+.book-info-3 {
+  padding: 0 0 0 59px;
+}
+
+.chapter-num {
+  padding: 7px 0 11px 0;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+.update {
+  padding: 7px 20px;
+  background-color: #0290ff;
+  border: 1px solid #0290ff;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 300;
+}
+
+.update,
+.chapter-title {
+  font-size: 13px;
+}
+
+.hr-container {
+  width: 100%;
+  padding: 0 100px;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
+  margin: 40px auto 29px auto;
+  border: solid 1px #e8e8e8;
+}
+
+.add-bk-title {
+  margin: 0 0 19px 100px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+form {
+  padding: 0 100px 265px 100px;
+}
+
+input::placeholder,
+select {
+  color: #c4c4c4;
+}
+
+input {
+  border-radius: 4px;
+}
+
+.category-box {
+  padding: 0 34px;
+}
+
+input,
+.categories {
+  height: 45px;
+  letter-spacing: -0.15px;
+  font-size: 16px;
+}
+
+.categories {
+  padding-left: 16px;
+}
+
+.add-bk-btn,
+.update {
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+.add-bk-btn {
+  height: 45px;
+  background-color: #0290ff;
+  color: #fff;
+  border-radius: 3px;
+}
